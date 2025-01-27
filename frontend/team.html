@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Description</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: url('images/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        header h1 {
+            font-size: 1.8em;
+            color: #2c3e50;
+        }
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            transition: transform 0.3s ease;
+            background: url(images/bg.jpg) no-repeat center center fixed;
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .team-member h3 {
+            margin-top: 15px;
+            font-size: 1.3em;
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img style="width: 120px;" src="images/Photo.png" alt="Team Logo">
+        <h1>THE FINISHERS</h1>
+    </header>
+    <div class="team-members">
+        <div class="team-member">
+            <img src="images/DP.jpg" alt="Team Member">
+            <h3>ARIHANT</h3>
+        </div>
+        <div class="team-member">
+            <img src="images/archi.jpg" alt="Team Member">
+            <h3>ARCHI</h3>
+        </div>
+        <div class="team-member">
+            <img src="images/gorish.jpg" alt="Team Member">
+            <h3>GORISH</h3>
+        </div>
+        <div class="team-member">
+            <img src="images/aditya.jpg" alt="Team Member">
+            <h3>ADITYA</h3>
+        </div>
+    </div>
+</body>
+</html>

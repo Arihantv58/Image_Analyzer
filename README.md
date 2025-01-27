@@ -41,7 +41,7 @@ This project leverages the Azure AI Vision API to perform advanced image analysi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/image-analysis.git
+   https://github.com/Arihantv58/Image_Analyzer.git
    cd image-analysis
    ```
 

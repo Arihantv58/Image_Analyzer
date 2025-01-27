@@ -76,6 +76,9 @@ instance/
 
 # Scrapy stuff:
 .scrapy
+.vscode
+.gitignore
+.gitattributes
 
 # Sphinx documentation
 docs/_build/

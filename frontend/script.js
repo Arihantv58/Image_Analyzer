@@ -11,7 +11,12 @@ document.getElementById('imageForm').addEventListener('submit', async function(e
         uploadedImage.src = URL.createObjectURL(file);
         document.getElementById('output').style.display = 'block';
 
-        const response = await fetch('http://127.0.0.1:5000/analyze', {
+        // const response = await fetch('http://127.0.0.1:5000/analyze', {
+        //     method: 'POST',
+        //     body: formData
+        // });
+
+        const response = await fetch('http://172.203.248.210:5000/analyze', {
             method: 'POST',
             body: formData
         });

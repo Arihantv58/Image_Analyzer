@@ -9,7 +9,7 @@ import os
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, resources={r"/*", {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Load environment variables
 load_dotenv()
